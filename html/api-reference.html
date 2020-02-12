@@ -99,6 +99,222 @@
 <li><a href="#refreshing-the-access-token">Refreshing the access token</a></li>
 <li><a href="#using-the-access-token">Using the access token</a></li>
 </ul></li>
+<li><a href="#content-management">Content management</a>
+<ul>
+<li><a href="#locales">Locales</a>
+<ul>
+<li><a href="#list-locales">List locales</a></li>
+<li><a href="#get-locale-information">Get locale information</a></li>
+</ul></li>
+<li><a href="#food-lists">Food lists</a>
+<ul>
+<li><a href="#list-root-categories">List root categories</a></li>
+<li><a href="#list-uncategorised-foods">List uncategorised foods</a></li>
+<li><a href="#list-category-contents">List category contents</a></li>
+<li><a href="#get-food-parent-categories">Get food parent categories</a></li>
+<li><a href="#get-all-categories-that-contain-a-food-transitive">Get all categories that contain a food (transitive)</a></li>
+<li><a href="#get-subcategory-parent-categories">Get subcategory parent categories</a></li>
+<li><a href="#get-all-categories-that-contain-a-subcategory-transitive">Get all categories that contain a subcategory (transitive)</a></li>
+<li><a href="#check-if-a-food-code-is-available">Check if a food code is available</a></li>
+<li><a href="#get-a-food-record-global-local">Get a food record (global + local)</a></li>
+<li><a href="#create-a-new-food-record-global">Create a new food record (global)</a></li>
+<li><a href="#add-food-to-local-list">Add food to local list</a></li>
+<li><a href="#create-a-new-food-record-local">Create a new food record (local)</a></li>
+<li><a href="#create-a-new-food-record-with-automatically-generated-code-global">Create a new food record with automatically generated code (global)</a></li>
+<li><a href="#clone-a-food-record">Clone a food record</a></li>
+<li><a href="#clone-food-as-local">Clone food as local</a></li>
+<li><a href="#update-main-food-record">Update main food record</a></li>
+</ul></li>
+<li><a href="#update-local-food-record">Update local food record</a>
+<ul>
+<li><a href="#delete-food-record">Delete food record</a></li>
+<li><a href="#check-if-a-category-code-is-available">Check if a category code is available</a></li>
+<li><a href="#get-a-category-record-global-local">Get a category record (global + local)</a></li>
+<li><a href="#create-a-new-category-global">Create a new category (global)</a></li>
+<li><a href="#update-a-category-record-global">Update a category record (global)</a></li>
+<li><a href="#update-a-category-record-local">Update a category record (local)</a></li>
+<li><a href="#delete-a-category-record">Delete a category record</a></li>
+</ul></li>
+<li><a href="#associated-foods">Associated foods</a>
+<ul>
+<li><a href="#get-associated-foods">Get associated foods</a></li>
+<li><a href="#update-associated-foods">Update associated foods</a></li>
+</ul></li>
+<li><a href="#dietary-feedback-rules">Dietary feedback rules</a>
+<ul>
+<li><a href="#list-demographic-groups">List demographic groups</a></li>
+<li><a href="#create-a-new-demographic-group">Create a new demographic group</a></li>
+<li><a href="#update-a-demographic-group">Update a demographic group</a></li>
+<li><a href="#get-demographic-group-data">Get demographic group data</a></li>
+<li><a href="#delete-a-demographic-group">Delete a demographic group</a></li>
+<li><a href="#create-a-demographic-group-scale-sector">Create a demographic group scale sector</a></li>
+<li><a href="#update-demographic-group-scale-sector">Update demographic group scale sector</a></li>
+<li><a href="#delete-demographic-group-scale-sector">Delete demographic group scale sector</a></li>
+<li><a href="#get-henry-coefficitents">Get Henry coefficitents</a></li>
+<li><a href="#get-physical-activity-levels">Get physical activity levels</a></li>
+<li><a href="#get-weight-targets">Get weight targets</a></li>
+</ul></li>
+<li><a href="#food-composition-tables">Food composition tables</a>
+<ul>
+<li><a href="#list-food-composition-tables">List food composition tables</a></li>
+<li><a href="#search-food-composition-table-records">Search food composition table records</a></li>
+<li><a href="#list-internal-nutrient-types">List internal nutrient types</a></li>
+</ul></li>
+<li><a href="#food-groups">Food groups</a>
+<ul>
+<li><a href="#list-food-groups-for-locale">List food groups for locale</a></li>
+<li><a href="#get-food-group-description">Get food group description</a></li>
+</ul></li>
+<li><a href="#source-high-resolution-image-management">Source (high resolution) image management</a>
+<ul>
+<li><a href="#list-source-images">List source images</a></li>
+<li><a href="#upload-a-source-image">Upload a source image</a></li>
+<li><a href="#upload-a-source-image-for-as-served">Upload a source image for as-served</a></li>
+<li><a href="#upload-a-source-image-for-an-image-map">Upload a source image for an image map</a></li>
+<li><a href="#update-a-source-image">Update a source image</a></li>
+<li><a href="#delete-a-source-image">Delete a source image</a></li>
+<li><a href="#process-source-image-for-portion-size-method-selection-screen">Process source image for portion size method selection screen</a></li>
+</ul></li>
+<li><a href="#portion-size-methods">Portion size methods</a>
+<ul>
+<li><a href="#list-as-served-image-sets">List as served image sets</a></li>
+<li><a href="#get-as-served-set-record">Get as served set record</a></li>
+<li><a href="#export-as-served-set-record-in-a-portable-format">Export as served set record in a portable format</a></li>
+<li><a href="#import-as-served-set-record-from-a-portable-format">Import as served set record from a portable format</a></li>
+<li><a href="#create-new-as-served-set">Create new as served set</a></li>
+<li><a href="#create-new-as-served-set-from-existing-source-images">Create new as served set from existing source images</a></li>
+<li><a href="#update-as-served-set">Update as served set</a></li>
+<li><a href="#delete-as-served-set">Delete as served set</a></li>
+</ul></li>
+<li><a href="#data-consistency-checks">Data consistency checks</a>
+<ul>
+<li><a href="#check-food-record">Check food record</a></li>
+<li><a href="#check-category-record">Check category record</a></li>
+<li><a href="#check-category-recursively-including-all-subcategories-and-foods">Check category recursively (including all subcategories and foods)</a></li>
+</ul></li>
+<li><a href="#food-and-category-search">Food and category search</a>
+<ul>
+<li><a href="#category-quick-search">Category quick search</a></li>
+<li><a href="#food-quick-search">Food quick search</a></li>
+</ul></li>
+<li><a href="#user-management">User management</a>
+<ul>
+<li><a href="#find-users">Find users</a></li>
+<li><a href="#create-user">Create user</a></li>
+<li><a href="#delete-user">Delete user</a></li>
+<li><a href="#update-users-profile-name-e-mail-phone-etc.">Update user’s profile (name, e-mail, phone etc.)</a></li>
+<li><a href="#update-users-password">Update user’s password</a></li>
+<li><a href="#update-users-physical-data">Update user’s physical data</a></li>
+<li><a href="#delete-multiple-users">Delete multiple users</a></li>
+<li><a href="#request-password-reset">Request password reset</a></li>
+<li><a href="#confirm-password-reset">Confirm password reset</a></li>
+<li><a href="#list-surveys">List surveys</a></li>
+<li><a href="#validate-survey-id">Validate survey ID</a></li>
+<li><a href="#create-survey">Create survey</a></li>
+<li><a href="#get-survey-data">Get survey data</a></li>
+<li><a href="#update-survey">Update survey</a></li>
+<li><a href="#delete-survey">Delete survey</a></li>
+<li><a href="#add-roles-to-users-possibly-duplicated-no-relevance-to-survey">Add roles to users (possibly duplicated, no relevance to survey)</a></li>
+<li><a href="#remove-roles-from-users-possibly-duplicated-no-relevance-to-survey">Remove roles from users (possibly duplicated, no relevance to survey)</a></li>
+</ul></li>
+<li><a href="#survey-user-management">Survey user management</a>
+<ul>
+<li><a href="#list-survey-staff-users">List survey staff users</a></li>
+<li><a href="#create-or-update-staff-users">Create or update staff users</a></li>
+<li><a href="#list-survey-respondent-users">List survey respondent users</a></li>
+<li><a href="#create-or-update-respondent-users">Create or update respondent users</a></li>
+<li><a href="#upload-respondent-users-from-csv">Upload respondent users from CSV</a></li>
+<li><a href="#upload-notification-schedule-csv">Upload notification schedule CSV</a></li>
+<li><a href="#delete-users-should-be-merged-with-global">Delete users (should be merged with global)</a></li>
+<li><a href="#create-respondent-user-with-physical-profile-age-weight-etc.">Create respondent user with physical profile (age, weight etc.)</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#user-facing-food-data">User-facing food data</a>
+<ul>
+<li><a href="#food-search">Food search</a>
+<ul>
+<li><a href="#find-food-by-description-regular-foods">Find food by description (regular foods)</a></li>
+<li><a href="#find-food-by-description-recipe-ingredients">Find food by description (recipe ingredients)</a></li>
+<li><a href="#find-food-by-description-limit-to-specific-category">Find food by description (limit to specific category)</a></li>
+<li><a href="#suggest-splitting-into-several-foods">Suggest splitting into several foods</a></li>
+</ul></li>
+<li><a href="#food-browsing">Food browsing</a>
+<ul>
+<li><a href="#list-root-categories-1">List root categories</a></li>
+<li><a href="#get-category-contents">Get category contents</a></li>
+</ul></li>
+<li><a href="#portion-size-estimation">Portion size estimation</a>
+<ul>
+<li><a href="#get-food-data-portion-size-estimation-methods">Get food data (portion size estimation methods)</a></li>
+<li><a href="#get-food-data-portion-size-estimation-methods-trace-data-source">Get food data (portion size estimation methods, trace data source)</a></li>
+<li><a href="#get-brand-names">Get brand names</a></li>
+<li><a href="#get-weight-type-in-portion-size-method-dummy">Get weight type-in portion size method (dummy)</a></li>
+<li><a href="#get-as-served-image-set-data">Get as served image set data</a></li>
+<li><a href="#get-multiple-as-served-image-sets-data">Get multiple as served image sets data</a></li>
+<li><a href="#get-guide-image-data">Get guide image data</a></li>
+<li><a href="#get-image-map-data">Get image map data</a></li>
+<li><a href="#get-multiple-image-maps-data">Get multiple image maps data</a></li>
+<li><a href="#get-drinkware-set-data">Get drinkware set data</a></li>
+<li><a href="#get-associated-foods-manual">Get associated foods (manual)</a></li>
+<li><a href="#get-associated-foods-automatic">Get associated foods (automatic)</a></li>
+</ul></li>
+<li><a href="#food-composition">Food composition</a>
+<ul>
+<li><a href="#get-food-composition-data">Get Food composition data</a></li>
+</ul></li>
+<li><a href="#dietary-feedback">Dietary feedback</a>
+<ul>
+<li><a href="#get-five-a-day-feedback-rules">Get five a day feedback rules</a></li>
+<li><a href="#get-food-group-feedback-rules">Get food group feedback rules</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#user-profile-management">User profile management</a>
+<ul>
+<li><a href="#update-your-users-profile">Update your user’s profile</a></li>
+<li><a href="#get-your-users-physical-data-age-weight-etc.">Get your user’s physical data (age, weight, etc.)</a></li>
+<li><a href="#update-your-users-physical-data-age-weight-etc.">Update your user’s physical data (age, weight, etc.)</a></li>
+</ul></li>
+<li><a href="#analytics">Analytics</a>
+<ul>
+<li><a href="#ux-event-tracking">UX event tracking</a>
+<ul>
+<li><a href="#log-ux-event">Log UX event</a></li>
+</ul></li>
+<li><a href="#survey-data">Survey data</a>
+<ul>
+<li><a href="#get-survey-parameters-no-authentication-requred">Get survey parameters (no authentication requred)</a></li>
+<li><a href="#get-dietary-feedback-style">Get dietary feedback style</a></li>
+<li><a href="#get-survey-parameters-authentication-required">Get survey parameters (authentication required)</a></li>
+<li><a href="#get-current-user-info">Get current user info</a></li>
+<li><a href="#get-post-recall-actions">Get post-recall actions</a></li>
+<li><a href="#generate-user-if-allowed">Generate user (if allowed)</a></li>
+<li><a href="#submit-recall">Submit recall</a></li>
+<li><a href="#request-phone-callback">Request phone callback</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#user-profile-management-1">User profile management</a>
+<ul>
+<li><a href="#update-your-users-profile-1">Update your user’s profile</a></li>
+<li><a href="#get-your-users-physical-data-age-weight-etc.-1">Get your user’s physical data (age, weight, etc.)</a></li>
+<li><a href="#update-your-users-physical-data-age-weight-etc.-1">Update your user’s physical data (age, weight, etc.)</a></li>
+<li><a href="#user-sessions">User sessions</a>
+<ul>
+<li><a href="#get-server-side-session">Get server-side session</a></li>
+<li><a href="#update-server-side-session">Update server-side session</a></li>
+<li><a href="#delete-server-side-session">Delete server-side session</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#analytics-1">Analytics</a>
+<ul>
+<li><a href="#ux-event-tracking-1">UX event tracking</a>
+<ul>
+<li><a href="#log-ux-event-1">Log UX event</a></li>
+</ul></li>
+<li><a href="#client-side-error-logging">Client-side error logging</a>
+<ul>
+<li><a href="#submit-a-client-side-error-report">Submit a client-side error report</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
 <h2 id="introduction">Introduction</h2>
@@ -175,7 +391,7 @@
 <li><em>email</em> is the user’s system-wide e-mail address</li>
 <li><em>password</em> is the user’s password</li>
 </ul>
-<h4 id="response">Response</h4>
+<h5 id="response">Response</h5>
 <ul>
 <li><p><code>HTTP 200 OK</code>: successful authentication.</p>
 <p>The body is a JSON object containing a single field, <em>refreshToken</em>:</p>
@@ -200,7 +416,7 @@
 <li><em>username</em> is the survey user ID (does not have to be unique system-wide)</li>
 <li><em>password</em> is the user’s password</li>
 </ul>
-<h4 id="response-1">Response</h4>
+<h5 id="response-1">Response</h5>
 <ul>
 <li><p><code>HTTP 200 OK</code>: successful authentication. The body is a JSON object containing a single field, <em>refreshToken</em>:</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">{</span></span>
@@ -216,7 +432,7 @@
 <ul>
 <li><em>token</em> is the user’s personal authentication token</li>
 </ul>
-<h4 id="response-2">Response</h4>
+<h5 id="response-2">Response</h5>
 <ul>
 <li><p><code>HTTP 200 OK</code>: successful authentication. The body is a JSON object containing a single field, <em>refreshToken</em>:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode json"><code class="sourceCode json"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">{</span></span>
@@ -229,7 +445,7 @@
 <p>To obtain a new <em>access</em> token, <code>POST</code> a refresh request to</p>
 <p><code>/refresh</code></p>
 <p>with an empty body and the value of a valid <em>refresh</em> token in the <code>X-Auth-Token</code> header.</p>
-<h4 id="response-3">Response</h4>
+<h5 id="response-3">Response</h5>
 <ul>
 <li><p><code>HTTP 200 OK</code>: successful access token renewal.</p>
 <p>The body is JSON object containing a single field, <em>accessToken</em>:</p>
@@ -243,5 +459,293 @@
 <p>Any API request that requires authentication (nearly all of them at the moment) must include the access token exactly as returned by the server.</p>
 <p>The token should be sent in the <code>X-Auth-Token</code> header.</p>
 <p>The <code>HTTP 401 Unauthorized</code> response must be expected for any API request. To correctly handle this response, the application must <a href="#refreshing-the-access-token">request a new access token</a> and retry the request.</p>
+<h2 id="content-management">Content management</h2>
+<h3 id="locales">Locales</h3>
+<h4 id="list-locales">List locales</h4>
+<p><code>GET /admin/locales</code></p>
+<h4 id="get-locale-information">Get locale information</h4>
+<p><code>GET /admin/locales/:id</code></p>
+<h3 id="food-lists">Food lists</h3>
+<h4 id="list-root-categories">List root categories</h4>
+<p><code>GET /admin/browse/:locale/root-categories</code></p>
+<h4 id="list-uncategorised-foods">List uncategorised foods</h4>
+<p><code>GET /admin/browse/:locale/uncategorised-foods</code></p>
+<h4 id="list-category-contents">List category contents</h4>
+<p><code>GET  /admin/browse/:locale/:code</code></p>
+<h4 id="get-food-parent-categories">Get food parent categories</h4>
+<p><code>GET /admin/browse/:locale/food-parent-categories/:code</code></p>
+<h4 id="get-all-categories-that-contain-a-food-transitive">Get all categories that contain a food (transitive)</h4>
+<p><code>GET /admin/browse/:locale/food-all-categories/:code</code></p>
+<h4 id="get-subcategory-parent-categories">Get subcategory parent categories</h4>
+<p><code>GET /admin/browse/:locale/category-parent-categories/:code</code></p>
+<h4 id="get-all-categories-that-contain-a-subcategory-transitive">Get all categories that contain a subcategory (transitive)</h4>
+<p><code>GET /admin/browse/:locale/category-all-categories/:code</code></p>
+<h4 id="check-if-a-food-code-is-available">Check if a food code is available</h4>
+<p><code>GET /admin/foods/code-available/:code</code></p>
+<h4 id="get-a-food-record-global-local">Get a food record (global + local)</h4>
+<p><code>GET /admin/foods/:locale/:code</code></p>
+<h4 id="create-a-new-food-record-global">Create a new food record (global)</h4>
+<p><code>POST /admin/foods/new</code></p>
+<h4 id="add-food-to-local-list">Add food to local list</h4>
+<p><code>POST /admin/foods/add-to-locale</code></p>
+<h4 id="create-a-new-food-record-local">Create a new food record (local)</h4>
+<p><code>POST /admin/foods/new/:locale</code></p>
+<h4 id="create-a-new-food-record-with-automatically-generated-code-global">Create a new food record with automatically generated code (global)</h4>
+<p><code>POST /admin/foods/new-with-temp-code</code></p>
+<h4 id="clone-a-food-record">Clone a food record</h4>
+<p><code>POST /admin/foods/:locale/:code/clone</code></p>
+<h4 id="clone-food-as-local">Clone food as local</h4>
+<p><code>POST /admin/foods/:locale/:code/clone-as-local</code></p>
+<h4 id="update-main-food-record">Update main food record</h4>
+<p><code>POST /admin/foods/:code</code></p>
+<h3 id="update-local-food-record">Update local food record</h3>
+<p><code>POST /admin/foods/:locale/:code</code></p>
+<h4 id="delete-food-record">Delete food record</h4>
+<p><code>DELETE /admin/foods/:code</code></p>
+<h4 id="check-if-a-category-code-is-available">Check if a category code is available</h4>
+<p><code>GET /admin/categories/code-available/:code</code></p>
+<h4 id="get-a-category-record-global-local">Get a category record (global + local)</h4>
+<p><code>GET /admin/categories/:locale/:code</code></p>
+<h4 id="create-a-new-category-global">Create a new category (global)</h4>
+<p><code>POST /admin/categories/new</code></p>
+<h4 id="update-a-category-record-global">Update a category record (global)</h4>
+<p><code>POST /admin/categories/:code</code></p>
+<h4 id="update-a-category-record-local">Update a category record (local)</h4>
+<p><code>POST /admin/categories/:locale/:code</code></p>
+<h4 id="delete-a-category-record">Delete a category record</h4>
+<p><code>DELETE /admin/categories/:code</code></p>
+<h3 id="associated-foods">Associated foods</h3>
+<h4 id="get-associated-foods">Get associated foods</h4>
+<p><code>GET /admin/associated-foods/:locale/:code</code></p>
+<h4 id="update-associated-foods">Update associated foods</h4>
+<p><code>POST /admin/associated-foods/:locale/:code</code></p>
+<h3 id="dietary-feedback-rules">Dietary feedback rules</h3>
+<h4 id="list-demographic-groups">List demographic groups</h4>
+<p><code>GET /admin/demographic-groups</code></p>
+<h4 id="create-a-new-demographic-group">Create a new demographic group</h4>
+<p><code>POST /admin/demographic-groups</code></p>
+<h4 id="update-a-demographic-group">Update a demographic group</h4>
+<p><code>PATCH /admin/demographic-groups/:id</code></p>
+<h4 id="get-demographic-group-data">Get demographic group data</h4>
+<p><code>GET /admin/demographic-groups/:id</code></p>
+<h4 id="delete-a-demographic-group">Delete a demographic group</h4>
+<p><code>DELETE /admin/demographic-groups/:id</code></p>
+<h4 id="create-a-demographic-group-scale-sector">Create a demographic group scale sector</h4>
+<p><code>POST /admin/demographic-groups/:id/scale-sectors</code></p>
+<h4 id="update-demographic-group-scale-sector">Update demographic group scale sector</h4>
+<p><code>PATCH /admin/demographic-group-scale-sectors/:id</code></p>
+<h4 id="delete-demographic-group-scale-sector">Delete demographic group scale sector</h4>
+<p><code>DELETE /admin/demographic-group-scale-sectors/:id</code></p>
+<h4 id="get-henry-coefficitents">Get Henry coefficitents</h4>
+<p><code>GET /admin/henry-coefficients</code></p>
+<h4 id="get-physical-activity-levels">Get physical activity levels</h4>
+<p><code>GET /admin/physical-activity-levels</code></p>
+<h4 id="get-weight-targets">Get weight targets</h4>
+<p><code>GET /admin/weight-targets</code></p>
+<h3 id="food-composition-tables">Food composition tables</h3>
+<h4 id="list-food-composition-tables">List food composition tables</h4>
+<p><code>GET /admin/nutrient-tables</code></p>
+<h4 id="search-food-composition-table-records">Search food composition table records</h4>
+<p><code>GET /admin/nutrient-tables/:nutrientTableId</code></p>
+<h4 id="list-internal-nutrient-types">List internal nutrient types</h4>
+<p><code>GET /admin/nutrient-types</code></p>
+<h3 id="food-groups">Food groups</h3>
+<h4 id="list-food-groups-for-locale">List food groups for locale</h4>
+<p><code>GET /admin/food-groups/:locale</code></p>
+<h4 id="get-food-group-description">Get food group description</h4>
+<p><code>GET /admin/food-groups/:locale/:id</code></p>
+<h3 id="source-high-resolution-image-management">Source (high resolution) image management</h3>
+<h4 id="list-source-images">List source images</h4>
+<p><code>GET /admin/images/source</code></p>
+<h4 id="upload-a-source-image">Upload a source image</h4>
+<p><code>POST /admin/images/source/new</code></p>
+<h4 id="upload-a-source-image-for-as-served">Upload a source image for as-served</h4>
+<p><code>POST /admin/images/source/new-as-served</code></p>
+<h4 id="upload-a-source-image-for-an-image-map">Upload a source image for an image map</h4>
+<p><code>POST /admin/images/source/new-image-map</code></p>
+<h4 id="update-a-source-image">Update a source image</h4>
+<p><code>PATCH /admin/images/source/:id</code></p>
+<h4 id="delete-a-source-image">Delete a source image</h4>
+<p><code>DELETE /admin/images/source/delete</code></p>
+<h4 id="process-source-image-for-portion-size-method-selection-screen">Process source image for portion size method selection screen</h4>
+<p><code>POST /admin/images/process-for-selection-screen</code></p>
+<h3 id="portion-size-methods">Portion size methods</h3>
+<h4 id="list-as-served-image-sets">List as served image sets</h4>
+<p><code>GET /admin/portion-size/as-served</code></p>
+<h4 id="get-as-served-set-record">Get as served set record</h4>
+<p><code>GET /admin/portion-size/as-served/:id</code></p>
+<h4 id="export-as-served-set-record-in-a-portable-format">Export as served set record in a portable format</h4>
+<p><code>GET /admin/portion-size/as-served/:id/export</code></p>
+<h4 id="import-as-served-set-record-from-a-portable-format">Import as served set record from a portable format</h4>
+<p><code>POST /admin/portion-size/as-served/import</code></p>
+<h4 id="create-new-as-served-set">Create new as served set</h4>
+<p><code>POST /admin/portion-size/as-served/new</code></p>
+<h4 id="create-new-as-served-set-from-existing-source-images">Create new as served set from existing source images</h4>
+<p><code>POST /admin/portion-size/as-served/new-from-source</code></p>
+<h4 id="update-as-served-set">Update as served set</h4>
+<p><code>PUT /admin/portion-size/as-served/:id</code></p>
+<h4 id="delete-as-served-set">Delete as served set</h4>
+<p><code>DELETE /admin/portion-size/as-served/:id</code></p>
+<h3 id="data-consistency-checks">Data consistency checks</h3>
+<h4 id="check-food-record">Check food record</h4>
+<p><code>GET /admin/foods/:locale/:code/problems</code></p>
+<h4 id="check-category-record">Check category record</h4>
+<p><code>GET /admin/categories/:locale/:code/problems</code></p>
+<h4 id="check-category-recursively-including-all-subcategories-and-foods">Check category recursively (including all subcategories and foods)</h4>
+<p><code>GET /admin/categories/:locale/:code/recursive-problems</code></p>
+<h3 id="food-and-category-search">Food and category search</h3>
+<h4 id="category-quick-search">Category quick search</h4>
+<p><code>GET /admin/quick-search/:locale/categories/:term</code></p>
+<h4 id="food-quick-search">Food quick search</h4>
+<p><code>GET /admin/quick-search/:locale/foods/:term</code></p>
+<h3 id="user-management">User management</h3>
+<h4 id="find-users">Find users</h4>
+<p><code>GET /</code></p>
+<h4 id="create-user">Create user</h4>
+<p><code>POST /</code></p>
+<h4 id="delete-user">Delete user</h4>
+<p><code>DELETE /:userId</code></p>
+<h4 id="update-users-profile-name-e-mail-phone-etc.">Update user’s profile (name, e-mail, phone etc.)</h4>
+<p><code>PATCH /:userId</code></p>
+<h4 id="update-users-password">Update user’s password</h4>
+<p><code>PATCH /:userId/password</code></p>
+<h4 id="update-users-physical-data">Update user’s physical data</h4>
+<p><code>PATCH /:userId/physical-data</code></p>
+<h4 id="delete-multiple-users">Delete multiple users</h4>
+<p><code>POST /delete</code></p>
+<h4 id="request-password-reset">Request password reset</h4>
+<p><code>POST /password-reset-request</code></p>
+<h4 id="confirm-password-reset">Confirm password reset</h4>
+<p><code>POST /reset-password</code> ### Survey management</p>
+<h4 id="list-surveys">List surveys</h4>
+<p><code>GET /</code></p>
+<h4 id="validate-survey-id">Validate survey ID</h4>
+<p><code>POST /validate-id</code></p>
+<h4 id="create-survey">Create survey</h4>
+<p><code>POST /</code></p>
+<h4 id="get-survey-data">Get survey data</h4>
+<p><code>GET /:surveyId</code></p>
+<h4 id="update-survey">Update survey</h4>
+<p><code>PATCH /:surveyId</code></p>
+<h4 id="delete-survey">Delete survey</h4>
+<p><code>DELETE /:surveyId</code></p>
+<h4 id="add-roles-to-users-possibly-duplicated-no-relevance-to-survey">Add roles to users (possibly duplicated, no relevance to survey)</h4>
+<p><code>POST /:surveyId/acl</code></p>
+<h4 id="remove-roles-from-users-possibly-duplicated-no-relevance-to-survey">Remove roles from users (possibly duplicated, no relevance to survey)</h4>
+<p><code>DELETE /:surveyId/acl</code></p>
+<h3 id="survey-user-management">Survey user management</h3>
+<h4 id="list-survey-staff-users">List survey staff users</h4>
+<p><code>GET /:surveyId/users/staff</code></p>
+<h4 id="create-or-update-staff-users">Create or update staff users</h4>
+<p><code>POST /:surveyId/users/staff</code></p>
+<h4 id="list-survey-respondent-users">List survey respondent users</h4>
+<p><code>GET /:surveyId/users/respondents</code></p>
+<h4 id="create-or-update-respondent-users">Create or update respondent users</h4>
+<p><code>POST /:surveyId/users/respondents</code></p>
+<h4 id="upload-respondent-users-from-csv">Upload respondent users from CSV</h4>
+<p><code>POST /:surveyId/users/respondents/upload-csv</code></p>
+<h4 id="upload-notification-schedule-csv">Upload notification schedule CSV</h4>
+<p><code>POST /:surveyId/users/notifications/upload-csv</code></p>
+<h4 id="delete-users-should-be-merged-with-global">Delete users (should be merged with global)</h4>
+<p><code>DELETE /:surveyId/users</code></p>
+<h4 id="create-respondent-user-with-physical-profile-age-weight-etc.">Create respondent user with physical profile (age, weight etc.)</h4>
+<p><code>POST /:surveyId/users/respondents/with-physical-data</code></p>
+<h2 id="user-facing-food-data">User-facing food data</h2>
+<h3 id="food-search">Food search</h3>
+<h4 id="find-food-by-description-regular-foods">Find food by description (regular foods)</h4>
+<p><code>GET /foods/:locale/lookup</code></p>
+<h4 id="find-food-by-description-recipe-ingredients">Find food by description (recipe ingredients)</h4>
+<p><code>GET /foods/:locale/lookup-for-recipes</code></p>
+<h4 id="find-food-by-description-limit-to-specific-category">Find food by description (limit to specific category)</h4>
+<p><code>GET /foods:locale/lookup-in-category</code></p>
+<h4 id="suggest-splitting-into-several-foods">Suggest splitting into several foods</h4>
+<p><code>GET /foods/:locale/split-description</code></p>
+<h3 id="food-browsing">Food browsing</h3>
+<h4 id="list-root-categories-1">List root categories</h4>
+<p><code>GET /categories/:locale</code></p>
+<h4 id="get-category-contents">Get category contents</h4>
+<p><code>GET /categories/:locale/:code</code></p>
+<h3 id="portion-size-estimation">Portion size estimation</h3>
+<h4 id="get-food-data-portion-size-estimation-methods">Get food data (portion size estimation methods)</h4>
+<p><code>GET /foods/:locale/:code</code></p>
+<h4 id="get-food-data-portion-size-estimation-methods-trace-data-source">Get food data (portion size estimation methods, trace data source)</h4>
+<p><code>GET /foods/:locale/:code/with-sources</code></p>
+<h4 id="get-brand-names">Get brand names</h4>
+<p><code>GET /foods/:locale/:code/brand-names</code></p>
+<h4 id="get-weight-type-in-portion-size-method-dummy">Get weight type-in portion size method (dummy)</h4>
+<p><code>GET /portion-size/weight</code></p>
+<h4 id="get-as-served-image-set-data">Get as served image set data</h4>
+<p><code>GET /portion-size/as-served/:id</code></p>
+<h4 id="get-multiple-as-served-image-sets-data">Get multiple as served image sets data</h4>
+<p><code>POST /portion-size/as-served</code></p>
+<h4 id="get-guide-image-data">Get guide image data</h4>
+<p><code>GET /portion-size/guide-image/:id</code></p>
+<h4 id="get-image-map-data">Get image map data</h4>
+<p><code>GET /portion-size/image-maps/:id</code></p>
+<h4 id="get-multiple-image-maps-data">Get multiple image maps data</h4>
+<p><code>POST /portion-size/image-maps</code></p>
+<h4 id="get-drinkware-set-data">Get drinkware set data</h4>
+<p><code>GET /portion-size/drinkware/:id</code></p>
+<h4 id="get-associated-foods-manual">Get associated foods (manual)</h4>
+<p><code>GET /foods/:locale/:code/associated-foods</code></p>
+<h4 id="get-associated-foods-automatic">Get associated foods (automatic)</h4>
+<p><code>GET /foods/associated/:locale</code></p>
+<h3 id="food-composition">Food composition</h3>
+<h4 id="get-food-composition-data">Get Food composition data</h4>
+<p><code>GET /foods/:locale/:code/composition</code></p>
+<h3 id="dietary-feedback">Dietary feedback</h3>
+<h4 id="get-five-a-day-feedback-rules">Get five a day feedback rules</h4>
+<p><code>GET /feedback/five-a-day</code></p>
+<h4 id="get-food-group-feedback-rules">Get food group feedback rules</h4>
+<p><code>GET /feedback/food-groups</code></p>
+<h2 id="user-profile-management">User profile management</h2>
+<h4 id="update-your-users-profile">Update your user’s profile</h4>
+<p><code>PATCH /my-profile</code></p>
+<h4 id="get-your-users-physical-data-age-weight-etc.">Get your user’s physical data (age, weight, etc.)</h4>
+<p><code>GET /my-physical-data</code></p>
+<h4 id="update-your-users-physical-data-age-weight-etc.">Update your user’s physical data (age, weight, etc.)</h4>
+<p><code>PATCH /my-physical-data</code></p>
+<h2 id="analytics">Analytics</h2>
+<h3 id="ux-event-tracking">UX event tracking</h3>
+<h4 id="log-ux-event">Log UX event</h4>
+<p><code>POST /event</code></p>
+<h3 id="survey-data">Survey data</h3>
+<h4 id="get-survey-parameters-no-authentication-requred">Get survey parameters (no authentication requred)</h4>
+<p><code>GET /:surveyId/public-parameters</code></p>
+<h4 id="get-dietary-feedback-style">Get dietary feedback style</h4>
+<p><code>GET /:surveyId/feedback-style</code></p>
+<h4 id="get-survey-parameters-authentication-required">Get survey parameters (authentication required)</h4>
+<p><code>GET /:surveyId/parameters</code></p>
+<h4 id="get-current-user-info">Get current user info</h4>
+<p><code>GET /:surveyId/user-info</code></p>
+<h4 id="get-post-recall-actions">Get post-recall actions</h4>
+<p><code>GET /:surveyId/follow-up</code></p>
+<h4 id="generate-user-if-allowed">Generate user (if allowed)</h4>
+<p><code>POST /:surveyId/generate-user</code></p>
+<h4 id="submit-recall">Submit recall</h4>
+<p><code>POST /:surveyId/submissions</code></p>
+<h4 id="request-phone-callback">Request phone callback</h4>
+<p><code>POST /:surveyId/request-callback</code></p>
+<h2 id="user-profile-management-1">User profile management</h2>
+<h4 id="update-your-users-profile-1">Update your user’s profile</h4>
+<p><code>PATCH /my-profile</code></p>
+<h4 id="get-your-users-physical-data-age-weight-etc.-1">Get your user’s physical data (age, weight, etc.)</h4>
+<p><code>GET /my-physical-data</code></p>
+<h4 id="update-your-users-physical-data-age-weight-etc.-1">Update your user’s physical data (age, weight, etc.)</h4>
+<p><code>PATCH /my-physical-data</code></p>
+<h3 id="user-sessions">User sessions</h3>
+<h4 id="get-server-side-session">Get server-side session</h4>
+<p><code>GET /:surveyId/user-session</code></p>
+<h4 id="update-server-side-session">Update server-side session</h4>
+<p><code>POST /:surveyId/user-session</code></p>
+<h4 id="delete-server-side-session">Delete server-side session</h4>
+<p><code>DELETE /:surveyId/user-session</code></p>
+<h2 id="analytics-1">Analytics</h2>
+<h3 id="ux-event-tracking-1">UX event tracking</h3>
+<h4 id="log-ux-event-1">Log UX event</h4>
+<p><code>POST /event</code></p>
+<h3 id="client-side-error-logging">Client-side error logging</h3>
+<h4 id="submit-a-client-side-error-report">Submit a client-side error report</h4>
+<p><code>POST /errors/report</code></p>
 </body>
 </html>

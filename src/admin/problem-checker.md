@@ -1,13 +1,13 @@
-#### Data consistency checks
+### Data consistency checks
 
-### Check food record
+#### Check food record
 
 `GET /admin/foods/:locale/:code/problems`
 
-### Check category record
+#### Check category record
 
 `GET /admin/categories/:locale/:code/problems`
 
-### Check category recursively (including all subcategories and foods)
+#### Check category recursively (including all subcategories and foods)
 
 `GET /admin/categories/:locale/:code/recursive-problems`

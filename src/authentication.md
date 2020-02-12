@@ -35,7 +35,7 @@ where
 * *email* is the user's system-wide e-mail address
 * *password* is the user's password
         
-#### Response
+##### Response
 
 * `HTTP 200 OK`: successful authentication.
 
@@ -74,7 +74,7 @@ where
 * *username* is the survey user ID (does not have to be unique system-wide)
 * *password* is the user's password
 
-#### Response
+##### Response
 
 * `HTTP 200 OK`: successful authentication.
   The body is a JSON object containing a single field, *refreshToken*: 
@@ -100,7 +100,7 @@ where
 
 * *token* is the user's personal authentication token
 
-#### Response
+##### Response
 
 * `HTTP 200 OK`: successful authentication.
   The body is a JSON object containing a single field, *refreshToken*: 
@@ -123,7 +123,7 @@ To obtain a new *access* token, `POST` a refresh request to
 
 with an empty body and the value of a valid *refresh* token in the `X-Auth-Token` header.
 
-#### Response
+##### Response
 
 * `HTTP 200 OK`: successful access token renewal.
   
